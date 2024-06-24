@@ -2,76 +2,77 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
 .container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #ffffff;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     width: 300px;
+    text-align: center;
 }
 
 h1 {
-    margin: 0 0 20px;
-    text-align: center;
-    font-weight: normal;
+    font-size: 24px;
+    color: #333333;
 }
 
-.new-note {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: none;
 }
 
-#note-input {
+button {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    resize: none;
-    box-sizing: border-box;
-}
-
-#add-note {
-    padding: 10px;
     border: none;
-    background: #555;
-    color: #fff;
-    border-radius: 4px;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 14px;
     cursor: pointer;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
-#add-note:hover {
-    background: #333;
-}
-
-.notes-list {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+button:hover {
+    background-color: #555555;
 }
 
 .note {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #fafafa;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background: #f9f9f9;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .note p {
-    margin: 0;
-    flex: 1;
+    margin: 0 0 10px 0;
+    word-break: break-word;
+}
+
+.note button {
+    background-color: #dddddd;
+    border: none;
+    border-radius: 5px;
+    color: #666666;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.note button:hover {
+    background-color: #cccccc;
 }

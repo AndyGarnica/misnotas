@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             notes.push(noteText);
             localStorage.setItem('notes', JSON.stringify(notes));
             noteInput.value = '';
-            console.log('Nota agregada. Estado actual de las notas:', notes);
+            console.log('Nota agregada.', notes);
             renderNotes();
         }
     });
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Eliminar nota en el índice:', index);
         notes.splice(index, 1);
         localStorage.setItem('notes', JSON.stringify(notes));
-        console.log('Nota eliminada. Estado actual de las notas:', notes);
+        console.log('Nota eliminada', notes);
         renderNotes();
     };
 
